@@ -27,3 +27,14 @@ Code structure
 	helper_functions.py     (small functions not related to the image processing)
 	main_ATS.py             (main function)
 	processing_functions.py (ATS functions)
+	
+Note on lidar_data.npy structure:
+	The data are stored in (6, 89, 49) matrix and contain six sub-matrices:
+	0 - beam range grid, m
+	1 - azimuth grid, rad
+	2 - x-axis coordinates converted from beam range and azimuth, m
+	3 - y-axis coordinates converted from beam range and azimuth, m
+	4 - cleaned radial velocity values (removed outliers and filled the gaps), m/s
+	5 - original radial velocity values (may contain NaN and outliers), m/s
+
+Only indices 4 and 5 are relevant for the image processing. The coordinates are stored to allow plotting the lidar scan in the Cartesian coordinates,
