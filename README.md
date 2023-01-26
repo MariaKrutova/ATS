@@ -15,12 +15,15 @@ The methoud is suitable for identifying small structures on a predominantly unif
 
 Provided with the code are examples of the wind turbine wakes and the photo of the sea surface with a whitecap. The wake data are provided both as image and radial velocity values from the lidar.
 
+Code structure
 
-.\examples
-  |- lidar_data.npy     (lidar data stored in polar coordinates as a 3D matrix)
-  |- lidar_img.png      (lidar data plotted as a grascaly image in the Cartesian coordinates)
-  |- netcdf_img.png     (NetCDF data of a large-eddy simulation stored as a grayscale image)
-  |- whitecap_img.png   (sea surface photo with a whitecap used in [1] as an example)
-helper_functions.py     (small functions not related to the image processing)
-main_ATS.py             (main function)
-processing_functions.py (ATS functions)
+	.\examples
+
+		|- lidar_data.npy     (lidar data stored in polar coordinates as a 3D matrix)
+		|- lidar_img.png      (lidar data plotted as a grascaly image in the Cartesian coordinates)  
+		|- netcdf_img.png     (NetCDF data of a large-eddy simulation stored as a grayscale image)  
+		|- whitecap_img.png   (sea surface photo with a whitecap used in [1] as an example)
+  
+	helper_functions.py     (small functions not related to the image processing)
+	main_ATS.py             (main function)
+	processing_functions.py (ATS functions)
